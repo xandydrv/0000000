@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+:root {
+    --cor-principal: #13131b;
+    --cor-secundaria: #020303;
+    --cor-destaque: #050505;
+}
+
+
+
+
+
+
+.img-modal {
+    width: 420px;  
+    height: 200px; 
+    object-fit: cover; 
+   
+}
+
+
+
+
+.modal-content-custom {
+    background-color: #0c75a5; /* Cor de fundo desejada */
+    border-radius: 0.5rem; /* Opcional: arredonda os cantos do modal */
+}
+
+.text-modal {
+    color: #ffffff; /* Cor do texto */
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colunas responsivas */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+    background-color: black; /* Fundo da página preto */
+    background-image: url('https://wallpaper4k.top/wp-content/uploads/2023/09/spider-man-marvel-superheroes-red-background-marvel-comics-3840x2160-7494-1024x576.jpg');
+    background-size: cover; /* Para cobrir toda a área */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    animation: move 30s linear infinite; /* Animação do fundo */
+}
+
+@keyframes move {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+a, .btn-link:hover {
+    color: var(--cor-principal);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
